@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="date" id="first" />
+    <input type="date" id="second" />
+    <button onclick="check()">Click</button>
+    <script>
+      let a = document.getElementById("first");
+      let b = document.getElementById("second");
+      function check() {
+        console.log(a);
+        console.log(a.value);
+        console.log(b);
+        console.log(b.value);
+        console.log(a);
+
+        console.log(JSON.stringify(a.value));
+        
+      // program to convert date to number
+      // create date
+      const d1 = new Date();
+      console.log(d1);
+
+
+      // converting to number
+      const result = d1.getFullYear();
+      console.log(result);
+
+
+      const hey = 2000
+      let year = parseInt(a.getFullYear)
+      console.log(year);
+
+      console.log(result - year);
+      }
+
+    </script>
+  </body>
+</html>
